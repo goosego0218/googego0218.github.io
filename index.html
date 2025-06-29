@@ -8,20 +8,3 @@ author_profile: true
 배워서 남주자 - goosego의 블로그입니다.
 
 최신 글과 카테고리는 상단 메뉴 또는 사이드바에서 확인하세요.
-
-## 최근 게시물
-
-{% raw %}{% for post in site.posts limit:5 %}
-### [{{ post.title }}]({{ post.url }})
-{{ post.excerpt }}
-**카테고리:** {{ post.categories | join: ', ' }} | **작성일:** {{ post.date | date: "%Y년 %m월 %d일" }}
-{% endfor %}{% endraw %}
-
-## 카테고리별 보기
-
-- [파이썬](/python/)
-- [NumPy](/numpy/)
-
----
-
-**배워서 남주자 - goosego** 
