@@ -1,0 +1,10 @@
+<!-- Table of Contents -->
+{% if page.toc %}
+<nav class="toc">
+  <ul>
+    {% for heading in page.toc %}
+      <li><a href="#{{ heading.id }}">{{ heading.text }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %} 
