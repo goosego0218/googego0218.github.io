@@ -1,0 +1,14 @@
+<!-- Page Hero -->
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  <div class="page__hero">
+    {% if page.header.overlay_color or page.header.overlay_image %}
+      <div class="page__hero-overlay"
+        style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }}{% endif %}{% if page.header.overlay_image %}background-image: {% if page.header.overlay_filter %}{{ page.header.overlay_filter }}, {% endif %}url('{{ page.header.overlay_image | relative_url }}'){% endif %}"
+      ></div>
+    {% endif %}
+    {% if page.header.image %}
+      <img src="{{ page.header.image | relative_url }}" alt="{{ page.title }}" class="page__hero-image">
+    {% endif %}
+    <div class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+  </div>
+{% endif %} 

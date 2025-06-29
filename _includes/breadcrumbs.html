@@ -1,0 +1,12 @@
+<!-- Breadcrumbs -->
+{% if page.breadcrumbs %}
+  <nav class="breadcrumbs">
+    <ol>
+      <li><a href="{{ '/' | relative_url }}">홈</a></li>
+      {% for breadcrumb in page.breadcrumbs %}
+        <li><a href="{{ breadcrumb.url | relative_url }}">{{ breadcrumb.title }}</a></li>
+      {% endfor %}
+      <li>{{ page.title }}</li>
+    </ol>
+  </nav>
+{% endif %} 

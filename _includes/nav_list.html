@@ -1,0 +1,17 @@
+<!-- Navigation List -->
+{% if nav %}
+  <ul class="nav-list">
+    {% for item in nav %}
+      <li>
+        {% if item.url %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% else %}
+          {{ item.title }}
+        {% endif %}
+        {% if item.children %}
+          {% include nav_list nav=item.children %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %} 

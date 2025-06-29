@@ -1,0 +1,10 @@
+<!-- Page Hero Video -->
+{% if page.header.video.id and page.header.video.provider %}
+  <div class="page__hero-video">
+    {% if page.header.video.provider == "youtube" %}
+      <iframe src="https://www.youtube.com/embed/{{ page.header.video.id }}?autoplay=0&controls=1&rel=0" frameborder="0" allowfullscreen></iframe>
+    {% elsif page.header.video.provider == "vimeo" %}
+      <iframe src="https://player.vimeo.com/video/{{ page.header.video.id }}?autoplay=0&controls=1&rel=0" frameborder="0" allowfullscreen></iframe>
+    {% endif %}
+  </div>
+{% endif %} 
