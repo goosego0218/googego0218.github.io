@@ -1,0 +1,43 @@
+title: "goosego의 블로그"
+email: sonks9@naver.com
+description: >-
+  배워서 남주자 - goosego의 블로그입니다.
+baseurl: ""
+url: "https://goosego0218.github.io"
+twitter_username: goosego
+github_username: goosego0218
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Author
+author:
+  name: "goosego"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "배워서 남주자"
+  location: "South Korea"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/goosego0218"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:sonks9@naver.com" 

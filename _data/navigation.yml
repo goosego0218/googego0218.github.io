@@ -1,0 +1,5 @@
+main:
+  - title: "파이썬"
+    url: /python/
+  - title: "NumPy"
+    url: /numpy/ 
