@@ -5,8 +5,8 @@ description: >-
   배워서 남주자 - goosego의 블로그입니다.
 baseurl: ""
 url: "https://goosego0218.github.io"
-twitter_username: goosego
-github_username:  goosego0218
+remote_theme: mmistakes/minimal-mistakes
+locale: "ko-KR"
 
 # Build settings
 markdown: kramdown
@@ -25,7 +25,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "single"
       author_profile: true
       read_time: true
       comments: true
