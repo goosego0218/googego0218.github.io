@@ -1,3 +1,4 @@
+# Site settings
 title: "goosego의 블로그"
 email: sonks9@naver.com
 description: >-
@@ -5,15 +6,31 @@ description: >-
 baseurl: ""
 url: "https://goosego0218.github.io"
 twitter_username: goosego
-github_username: goosego0218
+github_username:  goosego0218
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
 
-# Theme
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 # Plugins
 plugins:
@@ -28,7 +45,16 @@ plugins:
 paginate: 5
 paginate_path: "/page:num/"
 
-# Author
+# Social sharing
+social-share: true
+
+# Comments
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "goosego-blog"
+
+# SEO
 author:
   name: "goosego"
   avatar: "/assets/images/bio-photo.jpg"

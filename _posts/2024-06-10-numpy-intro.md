@@ -1,7 +1,7 @@
 ---
-layout: single
+layout: post
 title: "Numpy란?"
-date: 2024-06-11
+date: 2024-06-10
 categories: [NumPy]
 tags: [numpy, python, 데이터분석, 배열]
 author_profile: true

@@ -1,5 +1,18 @@
+# main links
 main:
   - title: "파이썬"
     url: /python/
   - title: "NumPy"
-    url: /numpy/ 
+    url: /numpy/
+  - title: "AI Machine Learning"
+    url: /ai-machine-learning/
+  - title: "머신러닝"
+    url: /machine-learning/
+  - title: "딥러닝"
+    url: /deep-learning/
+  - title: "통계학"
+    url: /statistics/
+  - title: "선형대수"
+    url: /linear-algebra/
+  - title: "IT"
+    url: /it/ 
